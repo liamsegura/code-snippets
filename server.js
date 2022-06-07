@@ -7,7 +7,7 @@ app.use(cors())
 
 
 
-const codeSnippets = {"code":[
+const codeSnippets = [
         {"name" : "common keys",
         "tags" : 'Object',
         "expertise" : "Intermediate",
@@ -27,7 +27,7 @@ const codeSnippets = {"code":[
         "bulletThree" : "",
         "code" : "const fs = require('fs');const JSONToFile = (obj, filename) => fs.writeFileSync(`${filename}.json`, JSON.stringify(obj, null, 2));",
         "execution" : "JSONToFile({ test: 'is passed' }, 'testJsonFile');// writes the object to 'testJsonFile.json'"
-}]}
+}]
 
 app.get('/',(require,response)=>{
     response.sendFile(__dirname + '/index.html')
