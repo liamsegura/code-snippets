@@ -13,12 +13,13 @@ async function apiRequest(){
         const response = await fetch(`https://code-snippets-node-api.herokuapp.com/api`)
         const data = await response.json()
         console.log(data[0].code)
-        let code = ""
-        if(randomNumber < .5 ? code = data[1].code : code = data[0].code)
+
         snippetName.innerText = data[1].name
-        snippetType.innerText = data[1].tags
+        snippetType.innerText = data[1].tag
         snippetDescription.innerText = data[1].description
         codeBlock.innerText = data[1].code
+
+        console.log(data[0].type)
      
     }catch(error){
         console.log(error)

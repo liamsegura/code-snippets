@@ -9,7 +9,7 @@ app.use(cors())
 
 const codeSnippets = [
         {"name" : "Common keys",
-        "type" : 'Object',
+        "tag" : 'Object',
         "expertise" : "Intermediate",
         "description" : "Finds the common keys between two objects.",
         "bulletOne" : "Use Object.keys() to get the keys of the first object.",
@@ -19,7 +19,7 @@ const codeSnippets = [
         "execution" : "commonKeys({ a: 1, b: 2 }, { a: 2, c: 1 }); // ['a']"
     },
         {"name" : "JSON to file",
-        "type" : 'Node',
+        "tag" : 'Node',
         "expertise" : "Intermediate",
         "description" : "Writes a JSON object to a file.",
         "bulletOne" : "Use fs.writeFileSync(), template literals and JSON.stringify() to write a json object to a .json file.",
