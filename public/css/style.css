@@ -11,13 +11,14 @@
   body {
     background-color: #278ea5;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
   }
   
   .container {
-    width: 500px;
+      min-width: 500px;
     overflow-x: auto;
   }
   

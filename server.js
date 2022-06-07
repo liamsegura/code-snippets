@@ -26,7 +26,8 @@ const codeSnippets = [
         "bulletOne" : "Use fs.writeFileSync(), template literals and JSON.stringify() to write a json object to a .json file.",
         "bulletTwo" : "",
         "bulletThree" : "",
-        "code" : `const fs = require('fs');
+        "code" : `
+const fs = require('fs');
 
 const JSONToFile = (obj, filename) =>
     fs.writeFileSync(\`$\{filename}.json\`, JSON.stringify(obj, null, 2));`,
