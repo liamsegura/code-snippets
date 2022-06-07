@@ -1,5 +1,5 @@
 const snippetName = document.getElementById('name')
-const snippetType = document.getElementById('type')
+const snippetType = document.getElementById('language-copy')
 const snippetDescription = document.getElementById('description')
 
 const codeBlock = document.querySelector('code')
