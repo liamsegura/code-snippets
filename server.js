@@ -16,9 +16,13 @@ const codeSnippets = [
         "bulletOne" : "Use Object.keys() to get the keys of the first object.",
         "bulletTwo" : "Use Object.prototype.hasOwnProperty() to check if the second object has a key that's in the first object.",
         "bulletThree" : "Use Array.prototype.filter() to filter out keys that aren't in both objects.",
-        "code" : "const commonKeys = (obj1, obj2) => Object.keys(obj1).filter(key => obj2.hasOwnProperty(key));",
-        "execution" : "commonKeys({ a: 1, b: 2 }, { a: 2, c: 1 }); // ['a']"
+        "code" : `
+const commonKeys = (obj1, obj2) => 
+    Object.keys(obj1).filter(key => obj2.hasOwnProperty(key));
+
+commonKeys({ a: 1, b: 2 }, { a: 2, c: 1 }); // ['a']`
     },
+
         {"name" : "JSON to file",
         "tag" : 'Node',
         "expertise" : "Intermediate",
@@ -30,9 +34,9 @@ const codeSnippets = [
 const fs = require('fs');
 
 const JSONToFile = (obj, filename) =>
-    fs.writeFileSync(\`$\{filename}.json\`, JSON.stringify(obj, null, 2));`,
+    fs.writeFileSync(\`$\{filename}.json\`, JSON.stringify(obj, null, 2));
         
-        "execution" : "JSONToFile({ test: 'is passed' }, 'testJsonFile');// writes the object to 'testJsonFile.json'"
+JSONToFile({ test: 'is passed' }, 'testJsonFile');// writes the object to 'testJsonFile.json'`
 }]
 
 app.get('/',(require,response)=>{
@@ -46,4 +50,3 @@ app.get('/api',(request,response)=>{
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 })
-
