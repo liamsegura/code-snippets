@@ -8,7 +8,7 @@ app.use(cors())
 
 
 const codeSnippets = [
-        {"name" : "common keys",
+        {"name" : "Common keys",
         "tags" : 'Object',
         "expertise" : "Intermediate",
         "description" : "Finds the common keys between two objects.",
