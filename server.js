@@ -2,8 +2,6 @@ const express = require('express')
 const app = express()
 const PORT = 8000
 const cors = require('cors')
-hljs = require('highlight.js');
-html = hljs.highlight('<h1>Hello World!</h1>', {language: 'xml'}).value
 
 
 app.use(cors())
