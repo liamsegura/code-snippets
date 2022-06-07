@@ -14,10 +14,10 @@ async function apiRequest(){
         const data = await response.json()
         console.log(data[0].code)
 
-        snippetName.innerText = data[0].name
-        snippetType.innerText = data[0].tag
-        snippetDescription.innerText = data[0].description
-        codeBlock.innerText = data[0].code
+        snippetName.innerText = data[1].name
+        snippetType.innerText = data[1].tag
+        snippetDescription.innerText = data[1].description
+        codeBlock.innerText = data[1].code
 
         console.log(data[0].type)
      

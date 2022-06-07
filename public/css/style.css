@@ -6,46 +6,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: #292624;
   }
   
   body {
-    background-color: #292929;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #8A817C;
     height: 100vh;
   }
   
-  button{
-      color: #071e3d;
+  h1{
+      font-size: 4rem;
+      padding-top: 4rem;
   }
+.top-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  button{
+      padding: 10px 5px;
+      color: #463F3A;
+      background-color: #E0AFA0;
+      border: 0;
+      border-radius: 3px;
+  }
+    button {
+    background-color: #E0AFA0;
+    border: none;
+    outline: none;
+    color: #463F3A;
+    border-radius: 0 5px 0 0;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+    button:hover {
+    background-color: #be8675;
+  }
+
+
+
   .container {
-      min-width: 500px;
     overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 5rem;
+  }
+
+  .language-container{
+      display: flex;
+      width: 100%;
   }
   
   .language {
     display: flex;
     align-items: center;
-    color: white;
-    background-color: #1f4287;
+    color: #292624;
+    background-color: #BCB8B1;
     height: 50px;
     padding: 16px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px 0 0 0;
+    width: 100%;
   }
   
+  code{
+      color:#E0AFA0;
+  }
   .code-wrapper {
     position: relative;
   }
   
   .code-wrapper pre {
-    background-color: #071e3d;
-    color: white;
+   
+    background-color: #463F3A;
+    color: #463F3A;
     padding: 8px 8px;
     border-radius: 0 0 5px 5px;
-    height:30rem
+    min-height:20rem;
   }
   
   #copy-button {
@@ -53,10 +94,10 @@
     top: 8px;
     right: 8px;
     padding: 7px;
-    background-color: #1f4287;
+    background-color: #E0AFA0;
     border: none;
     outline: none;
-    color: white;
+    color: #463F3A;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s ease-in;
@@ -64,7 +105,7 @@
   }
   
   #copy-button:hover {
-    background-color: #1f428790;
+    background-color: #be8675;
   }
   
   .code-wrapper:hover #copy-button {

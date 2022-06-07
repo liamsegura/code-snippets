@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
-    <h1>Code Snippet</h1>
-    <h2 id="name">name</h2>
-    <h2 id="type">type</h2>
-    <h2 id="description">description</h2>
+    <section class="top-container">
+        <h1>Random Code Snippet</h1>
+        <h2 id="name">name</h2>
+        <h2 id="type">type</h2>
+        <h2 id="description">description</h2>
 
-    <button>random snippet</button>
-
+        
+    </section>
     <div class="container">
-        <p class="language" id="language-copy"></p>
+        <div class="language-container">
+        <p class="language" id="language-copy"></p><button>random snippet</button>
+        </div>
         <div class="code-wrapper">
           <pre>
-                  <code id="code">
-  </code>
-              </pre>
+            <code id="code"></code>
+          </pre>
           <button id="copy-button">Copy</button>
         </div>
         <span id="copy-success">Code copied! :)</span>
