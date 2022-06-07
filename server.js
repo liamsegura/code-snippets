@@ -29,7 +29,7 @@ const codeSnippets = [
         "code" : `const fs = require('fs');
 
                   const JSONToFile = (obj, filename) =>
-                      fs.writeFileSync(\`${filename}.json\`, JSON.stringify(obj, null, 2));`,
+                      fs.writeFileSync(\`$\{filename}.json\`, JSON.stringify(obj, null, 2));`,
         
         "execution" : "JSONToFile({ test: 'is passed' }, 'testJsonFile');// writes the object to 'testJsonFile.json'"
 }]

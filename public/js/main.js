@@ -29,16 +29,13 @@ async function apiRequest(){
 
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    hljs.initHighlightingOnLoad();
   
-    const codeBlock = document.getElementById('code');
+    const codeBlocks = document.getElementById('code');
     const copyButton = document.getElementById('copy-button');
     const copySuccess = document.getElementById('copy-success');
   
     const copyTextHandler = () => {
-      const text = codeBlock.innerText;
+      const text = codeBlocks.innerText;
   
       // first version - document.execCommand('copy');
       // var element = document.createElement('textarea');
@@ -68,4 +65,3 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   
     copyButton.addEventListener('click', copyTextHandler);
-  });
