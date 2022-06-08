@@ -42,7 +42,7 @@
     border: none;
     outline: none;
     color: #463F3A;
-    border-radius: 0 5px 0 0;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s ease-in;
   }
@@ -63,19 +63,19 @@
   }
 
   .language-container{
-      display: flex;
-      width: 100%;
-  }
-  
-  .language {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #292624;
     background-color: #BCB8B1;
     height: 50px;
     padding: 16px;
-    border-radius: 5px 0 0 0;
+    border-radius: 5px 5px 0 0;
     width: 100%;
+  }
+  
+  .language {
+
   }
   
   code{
