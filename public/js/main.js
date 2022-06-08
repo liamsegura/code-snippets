@@ -1,5 +1,5 @@
 const snippetType = document.getElementById('language-copy')
-const snippetDescription = document.getElementById('description')
+const snippetName = document.getElementById('name')
 
 const codeBlock = document.querySelector('code')
 const randomNumber = Math.random()
@@ -14,7 +14,7 @@ async function apiRequest(){
         console.log(data[0].code)
 
         snippetType.innerText = data[1].tag
-        snippetDescription.innerText = data[1].description
+        snippetName.innerText = data[1].name
         codeBlock.innerText = data[1].code
 
         console.log(data[0].type)
