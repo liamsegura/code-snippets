@@ -20,6 +20,9 @@
       padding-top: 4rem;
       padding-bottom: 4rem;
   }
+  h2{
+     
+  }
 .top-container{
     display: flex;
     flex-direction: column;
@@ -76,7 +79,7 @@
   }
   
   code{
-      color:#E0AFA0;
+      color:#ffffff;
   }
   .code-wrapper {
     position: relative;
