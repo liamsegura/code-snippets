@@ -89,7 +89,7 @@
     color: #463F3A;
     padding: 8px 8px;
     border-radius: 0 0 5px 5px;
-    min-height:20rem;
+    min-height:10rem;
   }
   
   .code-wrapper pre {
@@ -140,6 +140,8 @@
 .more-info-btn{
   margin-top: 5px;
   width: 100%;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
 }
 .more-info-container{
   background-color: #463F3A;

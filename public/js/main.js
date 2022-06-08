@@ -13,11 +13,17 @@ const randomNumber = Math.random()
 
 document.querySelector('button').addEventListener('click', apiRequest)
 
+
+
 async function apiRequest(){
+
     // const rapperName = document.querySelector('input').value
     try{
         const response = await fetch(`https://code-snippets-node-api.herokuapp.com/api`)
         const data = await response.json()
+
+        //display more info btn one load
+        document.querySelector('.more-info-btn').classList.add('show')
 
     //randomly choose object from object array
           let randomObject = data[Math.floor(Math.random()*data.length)];
