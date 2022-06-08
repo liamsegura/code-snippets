@@ -83,15 +83,17 @@
   }
   .code-wrapper {
     position: relative;
-  }
-  
-  .code-wrapper pre {
-   
+
     background-color: #463F3A;
     color: #463F3A;
     padding: 8px 8px;
     border-radius: 0 0 5px 5px;
     min-height:20rem;
+  }
+  
+  .code-wrapper pre {
+   
+
   }
   
   #copy-button {
