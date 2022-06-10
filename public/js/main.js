@@ -30,17 +30,26 @@ async function apiRequest(){
     //randomly choose object from object array
           let randomObject = data[Math.floor(Math.random()*data.length)];
     //place random object into DOM
-    
+
         snippetType.innerText = randomObject.tag
         snippetName.innerText = randomObject.name
         codeBlock.innerText = randomObject.code
         snippetDescription.innerText = randomObject.description
         snippetBulletOne.innerText = randomObject.bulletOne
-        snippetBulletTwo.innerText = randomObject.bulletTwo
-        snippetBulletThree.innerText = randomObject.bulletThree
-        snippetBulletFour.innerText = randomObject.bulletFour
-        snippetBulletFive.innerText = randomObject.bulletFive
-        snippetBulletSix.innerText = randomObject.bulletSix
+
+        //if undifined, add display none
+        randomObject.bulletTwo == undefined ? snippetBulletTwo.style.display = "none" : snippetBulletTwo.style.display = "block"
+        randomObject.bulletThree == undefined ? snippetBulletThree.style.display = "none" : snippetBulletThree.style.display = "block"
+        randomObject.bulletFour == undefined ?  snippetBulletFour.style.display = "none" : snippetBulletFour.style.display = "block"
+        randomObject.bulletFive  == undefined ? snippetBulletFive.style.display = "none" : snippetBulletFive.style.display = "block"
+        randomObject.bulletSix  == undefined ? snippetBulletSix.style.display = "none" : snippetBulletSix.style.display = "block";
+
+        snippetBulletTwo.innerText = randomObject.bulletTwo;
+        snippetBulletThree.innerText = randomObject.bulletThree;
+        snippetBulletFour.innerText = randomObject.bulletFour;
+        snippetBulletFive.innerText = randomObject.bulletFive;
+        snippetBulletSix.innerText = randomObject.bulletSix;
+
         snippetExpertise.innerText = `Expertise: ${randomObject.expertise}`
 
         console.log(data[0].type)
