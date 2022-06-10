@@ -6,11 +6,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #292624;
+    color: #d1d1d1;
   }
   
   body {
-    background-color: #8A817C;
+    background-color: #3b4654;;
     height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -19,6 +19,7 @@
       font-size: 4rem;
       padding-top: 2rem;
       padding-bottom: 2rem;
+      line-height: 3rem;
   }
   h2{
      
@@ -33,12 +34,12 @@
   button{
       padding: 10px 5px;
       color: #463F3A;
-      background-color: #E0AFA0;
+      background-color: #e7e7e7;
       border: 0;
       border-radius: 3px;
   }
     button {
-    background-color: #E0AFA0;
+    background-color: #d4d4d4;
     border: none;
     outline: none;
     color: #463F3A;
@@ -48,7 +49,7 @@
   }
   
     button:hover {
-    background-color: #be8675;
+    background-color: #7586be;
   }
 
 
@@ -76,16 +77,17 @@
   }
   
   .language {
-
+    color: #292624;
   }
   
   code{
       color:#ffffff;
+      width: 100%;
   }
   .code-wrapper {
     position: relative;
 
-    background-color: #463F3A;
+    background-color: #656565;
     color: #463F3A;
     padding: 8px 8px;
     border-radius: 0 0 5px 5px;
@@ -102,7 +104,7 @@
     top: 8px;
     right: 8px;
     padding: 7px;
-    background-color: #E0AFA0;
+    background-color: #d4d4d4;
     border: none;
     outline: none;
     color: #463F3A;
@@ -113,7 +115,7 @@
   }
   
   #copy-button:hover {
-    background-color: #be8675;
+    background-color: #7586be;
   }
   
   .code-wrapper:hover #copy-button {
@@ -125,7 +127,7 @@
     bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #da6947;
+    background-color: #7586be;
     color: white;
     padding: 16px 32px;
     font-size: 24px;
@@ -144,7 +146,7 @@
   transition: all 200ms ease-in-out;
 }
 .more-info-container{
-  background-color: #463F3A;
+  background-color: #656565;
   padding: 20px 8px;
   border-radius: 0 0 5px 5px;
   width: 100%;
