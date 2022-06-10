@@ -70,7 +70,7 @@
     color: #292624;
     background-color: #BCB8B1;
     height: 50px;
-    padding: 16px;
+    padding: 8px;
     border-radius: 5px 5px 0 0;
     width: 100%;
   }
@@ -172,24 +172,10 @@ p{
   padding: 2px;
 }
 }
-@media(max-width:420px){
+@media(max-width:500px){
   
   code{
     font-size: 8px;
-  }
-  .code-wrapper {
-    padding: 22px 8px;
-  }
-   
-  #copy-button {
-    opacity: 1;
-  }
-  
-}
-@media(max-width:820px){
-  
-  code{
-    font-size: 15px;
   }
   .code-wrapper {
     padding: 22px 8px;
