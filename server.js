@@ -16,9 +16,7 @@ const codeSnippets = [
     "bulletOne" : "Use Object.keys() to get the keys of the first object.",
     "bulletTwo" : "Use Object.prototype.hasOwnProperty() to check if the second object has a key that's in the first object.",
     "bulletThree" : "Use Array.prototype.filter() to filter out keys that aren't in both objects.",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+
     "code" : `
 const commonKeys = (obj1, obj2) => 
     Object.keys(obj1).filter(key => obj2.hasOwnProperty(key));
@@ -54,9 +52,7 @@ CSVToArray('col1,col2\\na,b\\nc,d', ',', true); // [['a', 'b'], ['c', 'd']];
     "bulletOne" : "Use the HSB to RGB conversion formula to convert to the appropriate format.",
     "bulletTwo" : "The range of the input parameters is H: [0, 360], S: [0, 100], B: [0, 100].",
     "bulletThree" : "The range of all output values is [0, 255].",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+
     "code" : `
 const HSBToRGB = (h, s, b) => {
     s /= 100;
@@ -76,9 +72,7 @@ HSBToRGB(18, 81, 99); // [252.45, 109.31084999999996, 47.965499999999984]
     "bulletOne" : "Use Array.prototype.reduce(), initialized with an empty array accumulator to iterate over nums.",
     "bulletTwo" : "Use Array.prototype.slice() to get the previous partial sum or 0 and add the current element to it.",
     "bulletThree" : "Use the spread operator (...) to add the new partial sum to the accumulator array containing the previous sums.",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+
     "code" : `
 const accumulate = (...nums) =>
 nums.reduce((acc, n) => [...acc, n + (acc.slice(-1)[0] || 0)], []);
@@ -94,9 +88,7 @@ accumulate(...[1, 2, 3, 4]); // [1, 3, 6, 10]
     "bulletOne" : "Use the Date constructor to create a Date object from the first argument.",
     "bulletTwo" : "Use Date.prototype.getDate() and Date.prototype.setDate() to add n days to the given date.",
     "bulletThree" : "Use Date.prototype.toISOString() to return a string in yyyy-mm-dd format.",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+  
     "code" : `
 const addDaysToDate = (date, n) => {
     const d = new Date(date);
@@ -113,11 +105,7 @@ addDaysToDate('2020-10-15', -10); // '2020-10-05'
     "expertise" : "Beginner",
     "description" : "Adds a class to an HTML element.",
     "bulletOne" : "Use Element.classList and DOMTokenList.add() to add the specified class to the element.",
-    "bulletTwo" : "",
-    "bulletThree" : "",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+ 
     "code" : `
 const addClass = (el, className) => el.classList.add(className);
 
@@ -130,11 +118,7 @@ addClass(document.querySelector('p'), 'special');
     "expertise" : "Intermediate",
     "description" : "Attaches an event listener to all the provided targets.",
     "bulletOne" : "Use Array.prototype.forEach() and EventTarget.addEventListener() to attach the provided listener for the given event type to all targets.",
-    "bulletTwo" : "",
-    "bulletThree" : "",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+
     "code" : `
 const addEventListenerAll = (targets, type, listener, options, useCapture) => {
     targets.forEach(target =>
@@ -153,11 +137,7 @@ console.log('Clicked a link')
     "expertise" : "Intermediate",
     "description" : "Writes a JSON object to a file.",
     "bulletOne" : "Use fs.writeFileSync(), template literals and JSON.stringify() to write a json object to a .json file.",
-    "bulletTwo" : "",
-    "bulletThree" : "",
-    "bulletFour" : "",
-    "bulletFive" : "",
-    "bulletSix" : "",
+
     "code" : `
 const fs = require('fs');
 

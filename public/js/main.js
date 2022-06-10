@@ -30,6 +30,7 @@ async function apiRequest(){
     //randomly choose object from object array
           let randomObject = data[Math.floor(Math.random()*data.length)];
     //place random object into DOM
+    
         snippetType.innerText = randomObject.tag
         snippetName.innerText = randomObject.name
         codeBlock.innerText = randomObject.code
