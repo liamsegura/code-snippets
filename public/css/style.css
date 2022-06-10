@@ -168,3 +168,21 @@ li{
   word-wrap: break-word;
   width: 100%;
 }
+p{
+  padding: 2px;
+}
+
+@media(min-height:425px){
+  
+  code{
+    font-size: 8px!important;
+  }
+  .code-wrapper {
+    padding: 22px 8px;
+  }
+   
+  #copy-button {
+    opacity: 1;
+  }
+  
+}

@@ -8,6 +8,7 @@ const snippetBulletFour = document.getElementById('bullet-four')
 const snippetBulletFive = document.getElementById('bullet-five')
 const snippetBulletSix = document.getElementById('bullet-six')
 const codeBlock = document.querySelector('code')
+const snippetExpertise = document.getElementById('expertise')
 const randomNumber = Math.random()
 
 
@@ -39,6 +40,7 @@ async function apiRequest(){
         snippetBulletFour.innerText = randomObject.bulletFour
         snippetBulletFive.innerText = randomObject.bulletFive
         snippetBulletSix.innerText = randomObject.bulletSix
+        snippetExpertise.innerText = `Expertise: ${randomObject.expertise}`
 
         console.log(data[0].type)
      

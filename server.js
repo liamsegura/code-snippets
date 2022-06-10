@@ -148,19 +148,6 @@ console.log('Clicked a link')
 // Logs 'Clicked a link' whenever any anchor element is clicked
 `
     },
-//     {"name" : "",
-//     "tag" : "",
-//     "expertise" : "",
-//     "description" : "",
-//     "bulletOne" : "",
-//     "bulletTwo" : "",
-//     "bulletThree" : "",
-//     "bulletFour" : "",
-//     "bulletFive" : "",
-//     "bulletSix" : "",
-//     "code" : `
-// `
-//     },
     {"name" : "JSON to file",
     "tag" : 'Node',
     "expertise" : "Intermediate",
@@ -192,3 +179,18 @@ app.get('/api',(request,response)=>{
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 })
+
+
+//     {"name" : "",
+//     "tag" : "",
+//     "expertise" : "",
+//     "description" : "",
+//     "bulletOne" : "",
+//     "bulletTwo" : "",
+//     "bulletThree" : "",
+//     "bulletFour" : "",
+//     "bulletFive" : "",
+//     "bulletSix" : "",
+//     "code" : `
+// `
+//     },
