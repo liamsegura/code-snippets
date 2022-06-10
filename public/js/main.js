@@ -6,6 +6,7 @@ const snippetBulletTwo = document.getElementById('bullet-two')
 const snippetBulletThree = document.getElementById('bullet-three')
 const snippetBulletFour = document.getElementById('bullet-four')
 const snippetBulletFive = document.getElementById('bullet-five')
+const snippetBulletSix = document.getElementById('bullet-six')
 const codeBlock = document.querySelector('code')
 const randomNumber = Math.random()
 
@@ -37,6 +38,7 @@ async function apiRequest(){
         snippetBulletThree.innerText = randomObject.bulletThree
         snippetBulletFour.innerText = randomObject.bulletFour
         snippetBulletFive.innerText = randomObject.bulletFive
+        snippetBulletSix.innerText = randomObject.bulletSix
 
         console.log(data[0].type)
      

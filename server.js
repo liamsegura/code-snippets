@@ -29,7 +29,7 @@ commonKeys({ a: 1, b: 2 }, { a: 2, c: 1 }); // ['a']`
     "tag" : "String, array",
     "expertise" : "intermediate",
     "description" : "Converts a comma-separated values (CSV) string to a 2D array.",
-    "bulletOne" : "Use Array.prototype.indexOf() to find the first newline character (\n).",
+    "bulletOne" : "Use Array.prototype.indexOf() to find the first newline character (\\n).",
     "bulletTwo" : "Use Array.prototype.slice() to remove the first row (title row) if omitFirstRow is true.",
     "bulletThree" : "Use String.prototype.split() to create a string for each row.",
     "bulletFour" : "Use String.prototype.split() to separate the values in each row, using the provided delimiter.",
@@ -38,13 +38,13 @@ commonKeys({ a: 1, b: 2 }, { a: 2, c: 1 }); // ['a']`
     "code" : `
 const CSVToArray = (data, delimiter = ',', omitFirstRow = false) =>
 data
-  .slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
-  .split('\n')
+  .slice(omitFirstRow ? data.indexOf('\\n') + 1 : 0)
+  .split('\\n')
   .map(v => v.split(delimiter));
 
-CSVToArray('a,b\nc,d'); // [['a', 'b'], ['c', 'd']];
-CSVToArray('a;b\nc;d', ';'); // [['a', 'b'], ['c', 'd']];
-CSVToArray('col1,col2\na,b\nc,d', ',', true); // [['a', 'b'], ['c', 'd']];
+CSVToArray('a,b\\nc,d'); // [['a', 'b'], ['c', 'd']];
+CSVToArray('a;b\\nc;d', ';'); // [['a', 'b'], ['c', 'd']];
+CSVToArray('col1,col2\\na,b\\nc,d', ',', true); // [['a', 'b'], ['c', 'd']];
 `
     },
     {"name" : "",
